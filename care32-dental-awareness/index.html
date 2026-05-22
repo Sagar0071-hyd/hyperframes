@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="./node_modules/gsap/dist/gsap.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        background: #000;
+        font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="main"
+      data-start="0"
+      data-duration="30"
+      data-width="1920"
+      data-height="1080"
+    >
+      <!-- Background gradient -->
+      <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, #1e40af 0%, #0f172a 50%, #1e3a8a 100%);"></div>
+
+      <!-- Intro Section: Welcome -->
+      <div id="intro" class="clip" data-start="0" data-duration="5" data-track-index="1" style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; flex-direction: column; position: relative; z-index: 10;">
+        <div style="text-align: center; color: white; background: rgba(0,0,0,0.5); padding: 60px; border-radius: 20px;">
+          <h1 style="font-size: 96px; font-weight: bold; margin: 0; text-shadow: 0 2px 8px rgba(0,0,0,0.8); letter-spacing: 2px;">🦷 Care32</h1>
+          <p style="font-size: 48px; margin-top: 20px; text-shadow: 0 2px 8px rgba(0,0,0,0.8); font-weight: 500;">Dental Excellence in Hyderabad</p>
+        </div>
+      </div>
+
+      <!-- Section 1: Importance of Dental Health -->
+      <div id="section1" class="clip" data-start="5" data-duration="5" data-track-index="1" style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; position: relative; z-index: 10;">
+        <div style="background: rgba(255,255,255,0.95); padding: 80px; border-radius: 20px; text-align: center; max-width: 1400px; box-shadow: 0 20px 60px rgba(0,0,0,0.3);">
+          <h2 style="font-size: 64px; color: #1e40af; margin: 0 0 40px 0; font-weight: bold;">Why Dental Health Matters</h2>
+          <p style="font-size: 42px; color: #333; line-height: 1.6; margin: 0;">Your smile is a reflection of your overall health. Regular dental care prevents cavities, gum disease, and maintains your beautiful smile for life.</p>
+        </div>
+      </div>
+
+      <!-- Section 2: Daily Care Tips -->
+      <div id="section2" class="clip" data-start="10" data-duration="6" data-track-index="1" style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; position: relative; z-index: 10;">
+        <div style="padding: 60px; text-align: center; width: 100%;">
+          <h2 style="font-size: 60px; color: white; margin: 0 0 50px 0; font-weight: bold; text-shadow: 0 2px 8px rgba(0,0,0,0.8);">Daily Dental Care Tips</h2>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; max-width: 1400px; margin: 0 auto;">
+            <div style="background: rgba(255,255,255,0.95); padding: 40px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+              <p style="font-size: 36px; color: #1e40af; margin: 0; font-weight: bold;">🪥 Brush Twice Daily</p>
+              <p style="font-size: 28px; color: #555; margin-top: 15px;">Morning and before bed with fluoride toothpaste</p>
+            </div>
+            <div style="background: rgba(255,255,255,0.95); padding: 40px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+              <p style="font-size: 36px; color: #1e40af; margin: 0; font-weight: bold;">🧵 Floss Daily</p>
+              <p style="font-size: 28px; color: #555; margin-top: 15px;">Remove plaque between teeth your brush can't reach</p>
+            </div>
+            <div style="background: rgba(255,255,255,0.95); padding: 40px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+              <p style="font-size: 36px; color: #1e40af; margin: 0; font-weight: bold;">🥗 Healthy Diet</p>
+              <p style="font-size: 28px; color: #555; margin-top: 15px;">Limit sugary foods and drinks for stronger teeth</p>
+            </div>
+            <div style="background: rgba(255,255,255,0.95); padding: 40px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+              <p style="font-size: 36px; color: #1e40af; margin: 0; font-weight: bold;">🏥 Regular Checkups</p>
+              <p style="font-size: 28px; color: #555; margin-top: 15px;">Visit your dentist every 6 months for prevention</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 3: Care32 Services -->
+      <div id="section3" class="clip" data-start="16" data-duration="6" data-track-index="1" style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; position: relative; z-index: 10;">
+        <div style="padding: 60px; text-align: center; width: 100%;">
+          <h2 style="font-size: 60px; color: white; margin: 0 0 50px 0; font-weight: bold; text-shadow: 0 2px 8px rgba(0,0,0,0.8);">Care32 Comprehensive Services</h2>
+          <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 30px; max-width: 1400px; margin: 0 auto;">
+            <div style="background: rgba(255,255,255,0.95); padding: 35px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+              <p style="font-size: 32px; color: #1e40af; margin: 0; font-weight: bold;">✨ Cosmetic Dentistry</p>
+              <p style="font-size: 24px; color: #555; margin-top: 10px;">Teeth whitening & veneers</p>
+            </div>
+            <div style="background: rgba(255,255,255,0.95); padding: 35px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+              <p style="font-size: 32px; color: #1e40af; margin: 0; font-weight: bold;">🦴 Implants & Crowns</p>
+              <p style="font-size: 24px; color: #555; margin-top: 10px;">Advanced tooth replacement</p>
+            </div>
+            <div style="background: rgba(255,255,255,0.95); padding: 35px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+              <p style="font-size: 32px; color: #1e40af; margin: 0; font-weight: bold;">🧒 Pediatric Care</p>
+              <p style="font-size: 24px; color: #555; margin-top: 10px;">Child-friendly dental care</p>
+            </div>
+            <div style="background: rgba(255,255,255,0.95); padding: 35px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+              <p style="font-size: 32px; color: #1e40af; margin: 0; font-weight: bold;">🎯 Orthodontics</p>
+              <p style="font-size: 24px; color: #555; margin-top: 10px;">Braces & aligners</p>
+            </div>
+            <div style="background: rgba(255,255,255,0.95); padding: 35px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+              <p style="font-size: 32px; color: #1e40af; margin: 0; font-weight: bold;">🌿 Root Canals</p>
+              <p style="font-size: 24px; color: #555; margin-top: 10px;">Painless endodontic therapy</p>
+            </div>
+            <div style="background: rgba(255,255,255,0.95); padding: 35px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+              <p style="font-size: 32px; color: #1e40af; margin: 0; font-weight: bold;">🧼 Cleaning & Prevention</p>
+              <p style="font-size: 24px; color: #555; margin-top: 10px;">Professional teeth cleaning</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 4: Why Choose Care32 -->
+      <div id="section4" class="clip" data-start="22" data-duration="5" data-track-index="1" style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; position: relative; z-index: 10;">
+        <div style="background: rgba(255,255,255,0.95); padding: 80px; border-radius: 20px; text-align: center; max-width: 1400px; box-shadow: 0 20px 60px rgba(0,0,0,0.3);">
+          <h2 style="font-size: 64px; color: #1e40af; margin: 0 0 40px 0; font-weight: bold;">Why Choose Care32?</h2>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 30px;">
+            <p style="font-size: 32px; color: #333;">✓ Expert dentists with years of experience</p>
+            <p style="font-size: 32px; color: #333;">✓ State-of-the-art dental equipment</p>
+            <p style="font-size: 32px; color: #333;">✓ Affordable treatment plans</p>
+            <p style="font-size: 32px; color: #333;">✓ Comfortable patient experience</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 5: Call to Action -->
+      <div id="cta" class="clip" data-start="27" data-duration="3" data-track-index="1" style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; flex-direction: column; position: relative; z-index: 10;">
+        <div style="text-align: center; color: white; background: rgba(0,0,0,0.5); padding: 60px; border-radius: 20px; max-width: 1200px;">
+          <h2 style="font-size: 72px; font-weight: bold; margin: 0 0 30px 0; text-shadow: 0 2px 8px rgba(0,0,0,0.8);">Schedule Your Appointment Today</h2>
+          <p style="font-size: 48px; margin: 0; text-shadow: 0 2px 8px rgba(0,0,0,0.8); font-weight: 500;">📞 Contact Care32 Dental Clinic</p>
+          <p style="font-size: 42px; margin-top: 20px; text-shadow: 0 2px 8px rgba(0,0,0,0.8); font-weight: 500;">Visit us in Hyderabad for your brightest smile!</p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+
+      // Intro fade in/out
+      tl.from("#intro", { opacity: 0, duration: 0.8 }, 0);
+      tl.to("#intro", { opacity: 0, duration: 0.8 }, 4.2);
+      tl.set("#intro", { opacity: 0 }, 5.0);
+
+      // Section 1 fade in/out
+      tl.from("#section1", { opacity: 0, y: 50, duration: 0.8 }, 5);
+      tl.to("#section1", { opacity: 0, y: -50, duration: 0.8 }, 9.2);
+      tl.set("#section1", { opacity: 0 }, 10.0);
+
+      // Section 2 fade in/out
+      tl.from("#section2", { opacity: 0, y: 50, duration: 0.8 }, 10);
+      tl.to("#section2", { opacity: 0, y: -50, duration: 0.8 }, 15.2);
+      tl.set("#section2", { opacity: 0 }, 16.0);
+
+      // Section 3 fade in/out
+      tl.from("#section3", { opacity: 0, y: 50, duration: 0.8 }, 16);
+      tl.to("#section3", { opacity: 0, y: -50, duration: 0.8 }, 21.2);
+      tl.set("#section3", { opacity: 0 }, 22.0);
+
+      // Section 4 fade in/out
+      tl.from("#section4", { opacity: 0, y: 50, duration: 0.8 }, 22);
+      tl.to("#section4", { opacity: 0, y: -50, duration: 0.8 }, 26.2);
+      tl.set("#section4", { opacity: 0 }, 27.0);
+
+      // CTA fade in/out
+      tl.from("#cta", { opacity: 0, duration: 0.8 }, 27);
+      tl.to("#cta", { opacity: 0, duration: 0.8 }, 29.2);
+      tl.set("#cta", { opacity: 0 }, 30.0);
+
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>
